@@ -67,6 +67,26 @@ class VentanaInicio extends JFrame{
 		txtbSfw.setWrapStyleWord(true);
 		add(txtbSfw);
 		
+		JLabel txtEyf = new JLabel("Enhance your form");
+		txtEyf.setBounds(27,423,120,13);
+		add(txtEyf);
+		
+		JCheckBox checEvPop= new JCheckBox("enable evil popup mode");
+		checEvPop.setBounds(25, 440, 173, 20);
+		add(checEvPop);
+		
+		JCheckBox checkJS = new JCheckBox("disable all JavaScript");
+		checkJS.setBounds(25, 462, 163, 20);
+		add(checkJS);
+		
+		JCheckBox checkfLink = new JCheckBox("include archive link");
+		checkfLink.setBounds(25, 484, 150, 20);
+		add(checkfLink);
+		
+		JCheckBox checkMkRw = new JCheckBox("include Monkey Rewards link");
+		checkMkRw.setBounds(25, 506, 196, 20);
+		add(checkMkRw);
+		
 		setVisible(true);
 
 	}
