@@ -119,6 +119,11 @@ class VentanaInicio extends JFrame{
 		txtbLName.setWrapStyleWord(true);
 		add(txtbLName);
 		
+		Icon icon = new ImageIcon("./archivos/Subscribe.PNG");
+		JButton btnSub = new JButton(icon);
+		btnSub.setBounds(297, 221, 200, 53);
+		add(btnSub);
+		
 		JLabel txtCp = new JLabel("Copy/paste onto your site");
 		txtCp.setBounds(277,300,1,13);
 		add(txtCp);
