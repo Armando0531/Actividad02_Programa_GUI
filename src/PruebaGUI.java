@@ -7,12 +7,23 @@ class VentanaInicio extends JFrame{
 
 		getContentPane().setLayout(null);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		setTitle("Ventana principal");
-		setSize(500, 300);
+		setTitle("Programa GUI [Layout Nulo]");
+		setSize(771,580);
 		setLocationRelativeTo(null);
-		setVisible(true);
 		
+		JLabel txtTitulo = new JLabel("<html>The classic Form includes all visible fields for this list.<html>");
+		txtTitulo.setBounds(27,21,230,25);
+		add(txtTitulo);
+		
+		JLabel txtFormOptions = new JLabel("Form options");
+		txtFormOptions.setBounds(27,70,77,13);
+		add(txtFormOptions);
+		
+		JLabel txt1stCheck = new JLabel("Include the following");
+		txt1stCheck.setBounds(27,93,127,13);
+		add(txt1stCheck);
 
+		setVisible(true);
 	}
 }
 public class PruebaGUI {
