@@ -33,7 +33,42 @@ class VentanaInicio extends JFrame{
 		txtbMail.setWrapStyleWord(true);
 		add(txtbMail);
 		
+		ButtonGroup bg = new ButtonGroup();
+		JRadioButton radioOrf = new JRadioButton("only required fields");
+		bg.add(radioOrf);
+		radioOrf.setBounds(27, 195, 148, 20);
+		add(radioOrf);
+		JRadioButton radioAll = new JRadioButton("all fields");
+		bg.add(radioAll);
+		radioAll.setBounds(27, 217, 95, 20);
+		add(radioAll);
+		
+		JLabel txtEditFields = new JLabel("(edit required fields in the form builder)");
+		txtEditFields.setBounds(42,245,220,13);
+		add(txtEditFields);
+		
+		
+		JCheckBox checkIgf = new JCheckBox("interest group fields");
+		checkIgf.setBounds(25, 294, 151, 20);
+		add(checkIgf);
+		
+		JCheckBox checkRfi = new JCheckBox("required field indicators");
+		checkRfi.setBounds(25, 318, 170, 20);
+		add(checkRfi);
+		
+		
+		JLabel txtSfw = new JLabel("Set form width");
+		txtSfw.setBounds(27,360,96,13);
+		add(txtSfw);
+		
+		JTextArea txtbSfw = new JTextArea();
+		txtbSfw.setBounds(27, 377, 225, 27);
+		txtbSfw.setLineWrap(true);
+		txtbSfw.setWrapStyleWord(true);
+		add(txtbSfw);
+		
 		setVisible(true);
+
 	}
 }
 public class PruebaGUI {
